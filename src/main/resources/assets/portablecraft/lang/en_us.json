@@ -1,0 +1,19 @@
+{
+  "itemGroup.tabPortableCraft": "PortableCraft",
+  "item.portablecraft.portable": "Base Portable Item",
+  "item.portablecraft.brewing_stand1": "Portable Brewing Stand",
+  "item.portablecraft.smithing_table1": "Portable Smithing Table",
+  "item.portablecraft.blast_furnace1": "Portable Blast Furnace",
+  "item.portablecraft.smoker1": "Portable Smoker",
+  "item.portablecraft.stone_cutter1": "Portable Stone Cutter",
+  "item.portablecraft.furnace1": "Portable Furnace",
+  "item.portablecraft.enchantment_table1": "Portable Enchantment Table",
+  "item.portablecraft.craft1": "Portable Craft Table",
+  "item.portablecraft.ender_chest1": "Portable Ender Chest",
+  "item.portablecraft.anvil1": "Portable Anvil",
+  "item.portablecraft.chest1": "Portable Chest",
+  "advancements.portablecraft.root.title": "纳须弥于芥子",
+  "advancements.portablecraft.root.description": "开始你的便携工艺旅程吧！"
+
+
+}
