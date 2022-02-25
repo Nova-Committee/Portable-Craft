@@ -20,6 +20,7 @@ public class ModContainers {
     public static ContainerType<RepairContainer> ANVIL;
     public static ContainerType<EnchantmentContainer> ENCHANTMENT;
     public static ContainerType<StonecutterContainer> STONECUTTER;
+    public static ContainerType<ChestContainer> GENERIC_9x6;
 
 
     @SubscribeEvent
@@ -34,7 +35,8 @@ public class ModContainers {
                 SMITHING = RegistryUtil.registerContainer("smithing_table1", SmithingTableContainer::create),
                 ANVIL = RegistryUtil.registerContainer("anvil1", RepairContainer::create),
                 ENCHANTMENT = RegistryUtil.registerContainer("enchantment_table1", EnchantmentContainer::create),
-                STONECUTTER = RegistryUtil.registerContainer("stone_cutter1", StonecutterContainer::create)
+                STONECUTTER = RegistryUtil.registerContainer("stone_cutter1", StonecutterContainer::create),
+                GENERIC_9x6 = RegistryUtil.registerContainer("generic1_9x6", ChestContainer::sixRows)
 
         );
     }

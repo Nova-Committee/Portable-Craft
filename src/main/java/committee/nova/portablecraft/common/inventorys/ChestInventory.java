@@ -1,14 +1,14 @@
 package committee.nova.portablecraft.common.inventorys;
 
+import committee.nova.portablecraft.common.containers.ChestContainer;
 import committee.nova.portablecraft.core.WorldSaveInventory;
+import committee.nova.portablecraft.init.ModContainers;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.IInventoryChangedListener;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.ItemStackHelper;
-import net.minecraft.inventory.container.ChestContainer;
 import net.minecraft.inventory.container.Container;
-import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
@@ -54,7 +54,7 @@ public class ChestInventory extends Inventory implements INamedContainerProvider
     @Override
     @Nullable
     public Container createMenu(int p_createMenu_1_, PlayerInventory p_createMenu_2_, PlayerEntity p_createMenu_3_) {
-        return new ChestContainer(ContainerType.GENERIC_9x6, p_createMenu_1_, p_createMenu_2_, this, 6);
+        return new ChestContainer(ModContainers.GENERIC_9x6, p_createMenu_1_, p_createMenu_2_, this, 6);
     }
 
 
@@ -74,9 +74,7 @@ public class ChestInventory extends Inventory implements INamedContainerProvider
     public CompoundNBT save(CompoundNBT pCompound) {
 
         ItemStackHelper.saveAllItems(pCompound, this.items);
-
         pCompound.putInt("InventoryNr", this.inventoryNr);
-
 
         return pCompound;
     }
@@ -150,13 +148,10 @@ public class ChestInventory extends Inventory implements INamedContainerProvider
         this.setChanged();
     }
 
-
     @Override
     public boolean stillValid(PlayerEntity pPlayer) {
         return true;
     }
-
-
 
     @Override
     public void clearContent() {
