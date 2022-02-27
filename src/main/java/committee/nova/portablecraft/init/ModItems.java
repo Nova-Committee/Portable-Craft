@@ -31,6 +31,7 @@ public class ModItems {
     public static Item Chest1;
     public static Item Bed1;
     public static Item Portable;
+    public static Item EnchantmentEdit;
 
     public static Item Debug;
 
@@ -63,14 +64,17 @@ public class ModItems {
         if(ModConfig.COMMON.craft_smoker.get()){
             registry.register(Smoker1 = new SmokerItem());
         }
-        if(ModConfig.COMMON.craft_stone_cutter.get()){
+        if (ModConfig.COMMON.craft_stone_cutter.get()) {
             registry.register(Stonecutter1 = new StonecutterItem());
         }
-        if(ModConfig.COMMON.craft_smithing_table.get()){
+        if (ModConfig.COMMON.craft_smithing_table.get()) {
             registry.register(SmithingTable1 = new SmithingTableItem());
         }
-        if(ModConfig.COMMON.craft_furnace.get()){
+        if (ModConfig.COMMON.craft_furnace.get()) {
             registry.register(Furnace1 = new FurnaceItem());
+        }
+        if (ModConfig.COMMON.craft_enchantment_edit.get()) {
+            registry.register(EnchantmentEdit = new EnchantmentEditItem());
         }
         registry.registerAll(
                 Portable = new PortableItem()

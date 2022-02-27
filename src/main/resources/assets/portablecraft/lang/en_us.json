@@ -12,8 +12,8 @@
   "item.portablecraft.ender_chest1": "Portable Ender Chest",
   "item.portablecraft.anvil1": "Portable Anvil",
   "item.portablecraft.chest1": "Portable Chest",
+  "item.portablecraft.enchantment_edit": "Portable Disenchantment Edit Table",
+  "container.disenchant": "Enchantment Edit",
   "advancements.portablecraft.root.title": "纳须弥于芥子",
   "advancements.portablecraft.root.description": "开始你的便携工艺旅程吧！"
-
-
 }

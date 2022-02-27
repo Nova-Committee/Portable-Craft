@@ -12,6 +12,8 @@
   "item.portablecraft.ender_chest1": "便携末影箱",
   "item.portablecraft.anvil1": "便携铁砧",
   "item.portablecraft.chest1": "便携箱子",
+  "item.portablecraft.enchantment_edit": "便携附魔编辑台",
+  "container.disenchant": "附魔编辑",
   "advancements.portablecraft.root.title": "纳须弥于芥子",
   "advancements.portablecraft.root.description": "开始你的便携工艺旅程吧！"
 }

@@ -21,6 +21,7 @@ public class ModContainers {
     public static ContainerType<EnchantmentContainer> ENCHANTMENT;
     public static ContainerType<StonecutterContainer> STONECUTTER;
     public static ContainerType<ChestContainer> GENERIC_9x6;
+    public static ContainerType<EnchantmentEditContainer> ENCHANTMENT_EDIT;
 
 
     @SubscribeEvent
@@ -28,7 +29,7 @@ public class ModContainers {
         final IForgeRegistry<ContainerType<?>> registry = event.getRegistry();
 
         registry.registerAll(
-               CRAFT = RegistryUtil.registerContainer("craft1", CraftingContainer::create),
+                CRAFT = RegistryUtil.registerContainer("craft1", CraftingContainer::create),
                 FURNACE = RegistryUtil.registerContainer("furnace1", FurnaceContainer::create),
                 SMOKER = RegistryUtil.registerContainer("smoker1", SmokerContainer::create),
                 BLAST_FURNACE = RegistryUtil.registerContainer("blast_furnace1", BlastFurnaceContainer::create),
@@ -36,7 +37,8 @@ public class ModContainers {
                 ANVIL = RegistryUtil.registerContainer("anvil1", RepairContainer::create),
                 ENCHANTMENT = RegistryUtil.registerContainer("enchantment_table1", EnchantmentContainer::create),
                 STONECUTTER = RegistryUtil.registerContainer("stone_cutter1", StonecutterContainer::create),
-                GENERIC_9x6 = RegistryUtil.registerContainer("generic1_9x6", ChestContainer::sixRows)
+                GENERIC_9x6 = RegistryUtil.registerContainer("generic1_9x6", ChestContainer::sixRows),
+                ENCHANTMENT_EDIT = RegistryUtil.registerContainer("enchantment_edit_table", EnchantmentEditContainer::create)
 
         );
     }

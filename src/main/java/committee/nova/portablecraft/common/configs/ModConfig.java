@@ -25,21 +25,17 @@ public class ModConfig {
     }
 
     public static class Common {
-        public final ForgeConfigSpec.ConfigValue<Integer> enchantFurnaceSpeedLevelPercent, enchantFurnaceSpeedMaxLevel
-                , enchantBrewingStandSpeedMaxLevel, enchantBrewingStandSpeedLevelPercent
-                ;
-        public final ForgeConfigSpec.ConfigValue<Boolean> enchantHeatHoldRegistry, enchantFurnaceSpeedLevelRegistry
-                , enchantBrewingStandSpeedLevelRegistry
-                ,
+        public final ForgeConfigSpec.ConfigValue<Integer> enchantFurnaceSpeedLevelPercent, enchantFurnaceSpeedMaxLevel, enchantBrewingStandSpeedMaxLevel, enchantBrewingStandSpeedLevelPercent;
+        public final ForgeConfigSpec.ConfigValue<Boolean> enchantHeatHoldRegistry, enchantFurnaceSpeedLevelRegistry, enchantBrewingStandSpeedLevelRegistry,
                 craft_workbench, craft_anvil, craft_enderchest, craft_enchantment_table, craft_chest, craft_furnace, craft_brewing_stand, craft_smoker,
-                craft_blast_furnace, craft_smithing_table, craft_stone_cutter;
+                craft_blast_furnace, craft_smithing_table, craft_stone_cutter, craft_enchantment_edit;
 
 
         public Common(ForgeConfigSpec.Builder builder) {
 
             builder.push("furnace_setting").comment("熔炉，高炉，烟熏炉有关设置");
             enchantFurnaceSpeedLevelPercent = builder.comment("熔炉速度附魔的加速百分比").defineInRange("enchantFurnaceSpeedLevelPercent", 720, 0, Integer.MAX_VALUE);
-            enchantFurnaceSpeedMaxLevel = builder.comment("熔炉速度附魔的默认最高等级").defineInRange("enchantFurnaceSpeedMaxLevel", 5, 0,Integer.MAX_VALUE);
+            enchantFurnaceSpeedMaxLevel = builder.comment("熔炉速度附魔的默认最高等级").defineInRange("enchantFurnaceSpeedMaxLevel", 5, 0, Integer.MAX_VALUE);
             enchantHeatHoldRegistry = builder.comment("是否开启熔炉手持时热量附魔").define("enchantHeatHoldRegistry", true);
             enchantFurnaceSpeedLevelRegistry = builder.comment("是否开启熔炉熔炼速度附魔").define("enchantHeatHoldRegistry", true);
             builder.pop();
@@ -62,6 +58,8 @@ public class ModConfig {
             craft_blast_furnace = builder.comment("是否开启便携高炉").define("craft_blast_furnace", true);
             craft_smithing_table = builder.comment("是否开启便携锻造台").define("craft_smithing_table", true);
             craft_stone_cutter = builder.comment("是否开启便携切石机").define("craft_stone_cutter", true);
+            craft_enchantment_edit = builder.comment("是否开启便携祛魔编辑台").define("craft_enchantment_edit", true);
+
             builder.pop();
 
         }

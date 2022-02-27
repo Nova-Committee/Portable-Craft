@@ -25,6 +25,7 @@ public class ClientEventHandler {
         ScreenManager.register(ModContainers.ENCHANTMENT, EnchantmentScreen::new);
         ScreenManager.register(ModContainers.STONECUTTER, StonecutterScreen::new);
         ScreenManager.register(ModContainers.GENERIC_9x6, ChestScreen::new);
+        ScreenManager.register(ModContainers.ENCHANTMENT_EDIT, EnchantmentEditScreen::new);
 
     }
 }

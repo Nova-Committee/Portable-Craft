@@ -1,6 +1,7 @@
 package committee.nova.portablecraft.common.network;
 
 import committee.nova.portablecraft.PortableCraft;
+import committee.nova.portablecraft.common.network.packets.ClickButtonPacket;
 import committee.nova.portablecraft.common.network.packets.SendFurnacePacket;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.player.PlayerEntity;
@@ -45,6 +46,7 @@ public class PacketHandler {
                 (version) -> version.equals(VERSION)
         );
         INSTANCE.registerMessage(nextID(), SendFurnacePacket.class, SendFurnacePacket::toBytes, SendFurnacePacket::new, SendFurnacePacket::handle);
+        INSTANCE.registerMessage(nextID(), ClickButtonPacket.class, ClickButtonPacket::toBytes, ClickButtonPacket::new, ClickButtonPacket::handle);
 
 
     }

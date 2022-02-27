@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CBC",
+    "DPD",
+    "OOO"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "D": {
+      "item": "minecraft:diamond_block"
+    },
+    "C": {
+      "item": "minecraft:chiseled_quartz_block"
+    },
+    "P": {
+      "item": "portablecraft:portable"
+    }
+  },
+  "result": {
+    "item": "portablecraft:enchantment_edit"
+  }
+}
