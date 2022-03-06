@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "portablecraft:portable"
+    },
+    {
+      "item": "minecraft:brewing_stand"
+    }
+  ],
+  "result": {
+    "item": "portablecraft:brewing_stand1",
+    "count": 1
+  }
+}

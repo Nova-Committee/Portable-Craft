@@ -1,0 +1,27 @@
+# This is an example mods.toml file. It contains the data relating to the loading mods.
+# There are several mandatory fields (#mandatory), and many more that are optional (#optional).
+modLoader="javafml" #mandatory
+loaderVersion="[40,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="GNU AGPL 3.0"
+[[mods]] #mandatory
+# The modid of the mod
+modId="portablecraft" #mandatory
+version="${file.jarVersion}" #mandatory
+displayName="PortableCraft" #mandatory
+logoFile="logo.png" #optional
+authors="cnlimiter" #optional
+description='''
+Portable Items for Survival!
+'''
+[[dependencies.portablecraft]] #optional
+   modId="forge" #mandatory
+   mandatory=true #mandatory
+   versionRange="[40,)" #mandatory
+   ordering="NONE"
+   side="BOTH"
+[[dependencies.portablecraft]]
+   modId="minecraft"
+   mandatory=true
+   versionRange="[1.18.2,1.19)"
+   ordering="NONE"
+   side="BOTH"

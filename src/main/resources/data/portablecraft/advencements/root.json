@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "portablecraft:portable"
+    },
+    "title": {
+      "translate": "advancements.portablecraft.root.title"
+    },
+    "description": {
+      "translate": "advancements.portablecraft.root.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "portablecraft:portable"
+          }
+        ]
+      }
+    }
+  }
+}
