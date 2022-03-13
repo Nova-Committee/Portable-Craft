@@ -1,0 +1,19 @@
+{
+  "itemGroup.portablecraft.tab_portablecraft": "便携工艺",
+  "item.portablecraft.portable": "基础便携框架",
+  "item.portablecraft.brewing_stand1": "便携炼药台",
+  "item.portablecraft.smithing_table1": "便携锻造台",
+  "item.portablecraft.blast_furnace1": "便携高炉",
+  "item.portablecraft.smoker1": "便携烟熏炉",
+  "item.portablecraft.stone_cutter1": "便携切石机",
+  "item.portablecraft.furnace1": "便携熔炉",
+  "item.portablecraft.enchantment_table1": "便携附魔台",
+  "item.portablecraft.craft1": "便携工作台",
+  "item.portablecraft.ender_chest1": "便携末影箱",
+  "item.portablecraft.anvil1": "便携铁砧",
+  "item.portablecraft.chest1": "便携箱子",
+  "item.portablecraft.enchantment_edit": "便携附魔编辑台",
+  "container.disenchant": "附魔编辑",
+  "advancements.portablecraft.root.title": "纳须弥于芥子",
+  "advancements.portablecraft.root.description": "开始你的便携工艺旅程吧！"
+}

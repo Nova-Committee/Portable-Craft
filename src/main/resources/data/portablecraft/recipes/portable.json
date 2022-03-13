@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "wsw",
+    "s s",
+    "wsw"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "w": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "portablecraft:portable",
+    "count": 1
+  }
+}
