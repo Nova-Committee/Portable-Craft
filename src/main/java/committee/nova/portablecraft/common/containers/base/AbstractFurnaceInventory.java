@@ -373,7 +373,7 @@ public abstract class AbstractFurnaceInventory extends SimpleContainer implement
 
     @Override
     public void setChanged() {
-        List<ContainerListener> changedListeners = ObfuscationReflectionHelper.getPrivateValue(SimpleContainer.class, this, "field_70480_d");
+        List<ContainerListener> changedListeners = ObfuscationReflectionHelper.getPrivateValue(SimpleContainer.class, this, "f_100398_");
         if (changedListeners != null) {
             for (ContainerListener iinventorychangedlistener : changedListeners) {
                 iinventorychangedlistener.containerChanged(this);

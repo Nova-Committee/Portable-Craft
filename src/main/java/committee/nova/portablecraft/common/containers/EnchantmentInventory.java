@@ -79,7 +79,7 @@ public class EnchantmentInventory extends SimpleContainer implements MenuProvide
 
     @Override
     public void setChanged() {
-        List<ContainerListener> changedListeners = ObfuscationReflectionHelper.getPrivateValue(SimpleContainer.class, this, "field_70480_d");
+        List<ContainerListener> changedListeners = ObfuscationReflectionHelper.getPrivateValue(SimpleContainer.class, this, "f_100398_");
         if (changedListeners != null) {
             for (ContainerListener iinventorychangedlistener : changedListeners) {
                 iinventorychangedlistener.containerChanged(this);
@@ -144,7 +144,7 @@ public class EnchantmentInventory extends SimpleContainer implements MenuProvide
     @Nullable
     @Override
     public AbstractContainerMenu createMenu(int p_createMenu_1_, Inventory p_createMenu_2_, Player p_createMenu_3_) {
-        return null;
+        return new EnchantmentContainer(p_createMenu_1_, p_createMenu_2_);
     }
 
     public void resetContainer() {

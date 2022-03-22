@@ -51,13 +51,11 @@ public class PortableCraft {
     @SubscribeEvent
     public void onServerStarted(ServerStartedEvent event) {
         WORLD = event.getServer().overworld();
-
     }
 
     @SubscribeEvent
     public void onServerStopped(ServerStoppedEvent event) {
         WorldSaveInventory.resetInstance();
     }
-
 
 }
