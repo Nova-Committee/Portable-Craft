@@ -35,7 +35,7 @@ public class BrewingStandSpeedEnchant extends BaseEnchant {
 
     @Override
     public int getMaxPower(int pEnchantmentLevel) {
-        return this.getMaxPower(pEnchantmentLevel) + 20;
+        return this.getMinPower(pEnchantmentLevel) + 20;
     }
 
     @Override
